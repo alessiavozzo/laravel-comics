@@ -3,3 +3,9 @@
 .active-link {
     border-bottom: 2px solid blue;
 }
+
+#jumbotron {
+    background-image: url(../img/jumbotron.jpg);
+    min-height: 30vh;
+    background-size: cover;
+}
