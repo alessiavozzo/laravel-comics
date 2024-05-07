@@ -35,36 +35,16 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-5 gx-4">
 
+            @foreach($banner_links as $key => $link)
+
             <div class="col">
                 <div class="product d-flex align-items-center gap-2">
-                    <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="">
-                    <div class="text text-uppercase text-white">Digital Comics</div>
+                    <img src="{{Vite::asset('resources/img/' . $link['image'] . '.png')}}" alt="">
+                    <div class="text text-uppercase text-white">{{$link['text']}}</div>
                 </div>
+
             </div>
-            <div class="col">
-                <div class="product d-flex align-items-center gap-2">
-                    <img src="{{Vite::asset('resources/img/buy-comics-merchandise.png')}}" alt="">
-                    <div class="text text-uppercase text-white">Dc merchandise</div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product d-flex align-items-center gap-2">
-                    <img src="{{Vite::asset('resources/img/buy-comics-subscriptions.png')}}" alt="">
-                    <div class="text text-uppercase text-white">subscription</div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product d-flex align-items-center gap-2">
-                    <img src="{{Vite::asset('resources/img/buy-comics-shop-locator.png')}}" alt="">
-                    <div class="text text-uppercase text-white">comic shop locator</div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="product d-flex align-items-center gap-2">
-                    <img src="{{Vite::asset('resources/img/buy-dc-power-visa.png')}}" alt="">
-                    <div class="text text-uppercase text-white">dc power visa</div>
-                </div>
-            </div>
+            @endforeach
 
         </div>
     </div>
