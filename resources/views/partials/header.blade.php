@@ -24,7 +24,7 @@
             <a href="{{route('homepage')}}" class="navbar-brand">
                 <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="dc-logo">
             </a>
-            <a class="nav-link text-dark text-uppercase" href="#">Characters</a>
+            <a class="nav-link text-uppercase {{Route::currentRouteName() === 'comic_books' ? 'active-link text-primary' : 'text-dark'}}" href="{{route('comic_books')}}">Comic books</a>
             <a class="nav-link text-uppercase {{Route::currentRouteName() === 'homepage' ? 'active-link text-primary' : 'text-dark'}}" href="{{route('homepage')}}" aria-current="page">Comics</a>
             <a class="nav-link text-uppercase {{Route::currentRouteName() === 'movies' ? 'active-link text-primary' : 'text-dark'}}" href="{{route('movies')}}">Movies</a>
             <a class="nav-link text-uppercase {{Route::currentRouteName() === 'tv' ? 'active-link text-primary' : 'text-dark'}}" href="{{route('tv')}}">Tv</a>
