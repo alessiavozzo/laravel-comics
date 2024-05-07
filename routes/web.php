@@ -20,3 +20,13 @@ Route::get('/', function () {
 
     return view('homepage', compact("comics"));
 })->name("homepage");
+
+Route::get('/movies', function () {
+
+    return view('movies');
+})->name("movies");
+
+Route::get('/tv', function () {
+
+    return view('tv');
+})->name("tv");
