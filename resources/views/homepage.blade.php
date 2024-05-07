@@ -31,7 +31,7 @@
 
 </section>
 
-<section id="buy-banner" class="bg-primary py-4">
+<section id="buy-banner" class="bg-primary py-5">
     <div class="container">
         <div class="row row-cols-1 row-cols-md-5 gx-4">
 
@@ -39,7 +39,7 @@
 
             <div class="col">
                 <div class="product d-flex align-items-center gap-2">
-                    <img src="{{Vite::asset('resources/img/' . $link['image'] . '.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/' . $link['image'])}}" alt="">
                     <div class="text text-uppercase text-white">{{$link['text']}}</div>
                 </div>
 

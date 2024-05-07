@@ -34,6 +34,16 @@
 
 footer {
     .footer-top {
-        background-image: url(../img/footer-bg.jpg);
+        background-image: url("../img/footer-bg.jpg");
+        overflow: hidden;
+
+        .footer-right {
+            position: relative;
+
+            img {
+                position: absolute;
+                margin-top: -7rem;
+            }
+        }
     }
 }
