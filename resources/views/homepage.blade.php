@@ -2,25 +2,29 @@
 
 @section("content")
 
-<div class="container">
-    <div class="row row-cols-1 row-cols-sm-4 row-cols-lg-6">
+<section id="current-series" class="bg-dark">
+    <div class="container">
+        <span class="title text-uppercase text-white fw-bold d-inline-block text-center bg-primary p-2 mb-4">Current series</span>
+        <div class="row row-cols-1 row-cols-sm-4 row-cols-lg-6 g-3">
 
 
-        <!-- foreach to loop in comics -->
-        @foreach($comics as $comic)
+            <!-- foreach to loop in comics -->
+            @foreach($comics as $comic)
 
-        <div class="col">
-            <div class="card">
-                <img class="card-img-top" src="{{$comic['thumb']}}" alt="Title" />
-                <div class="card-body">
-                    <h4 class="card-title">{{$comic["title"]}}</h4>
+            <div class="col">
+                <div class="comic">
+                    <img class="comic-image" src="{{$comic['thumb']}}" alt="">
+                    <div class="comic-title text-white text-uppercase">{{$comic["series"]}}</div>
                 </div>
+
             </div>
+            @endforeach
 
         </div>
-        @endforeach
+
 
     </div>
-</div>
+
+</section>
 
 @endsection

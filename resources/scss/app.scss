@@ -5,7 +5,23 @@
 }
 
 #jumbotron {
-    background-image: url(../img/jumbotron.jpg);
-    min-height: 30vh;
-    background-size: cover;
+    height: 250px;
+    overflow: hidden;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+.title {
+    margin-top: -1.5rem;
+}
+
+.comic-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+
 }
