@@ -1,5 +1,7 @@
 @extends("layouts.app")
 
+@section("page-title", 'Comic books')
+
 @section("content")
 
 <section id="comics-info" class="py-4">

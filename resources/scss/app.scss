@@ -1,49 +1,7 @@
+/* partials scss */
+@use "./partials/variables";
+@use "./partials/header";
+@use "./partials/main";
+@use "./partials/footer";
+
 @import '~bootstrap/scss/bootstrap';
-
-.active-link {
-    border-bottom: 2px solid blue;
-}
-
-#jumbotron {
-    height: 400px;
-    overflow: hidden;
-
-    img {
-        object-fit: contain;
-        width: 100%;
-    }
-}
-
-.title {
-    margin-top: -1.5rem;
-}
-
-.comic-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    object-position: top;
-
-}
-
-.product {
-    img {
-        height: 50px;
-    }
-}
-
-footer {
-    .footer-top {
-        background-image: url("../img/footer-bg.jpg");
-        overflow: hidden;
-
-        .footer-right {
-            position: relative;
-
-            img {
-                position: absolute;
-                margin-top: -7rem;
-            }
-        }
-    }
-}
