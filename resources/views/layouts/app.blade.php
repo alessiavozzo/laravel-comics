@@ -16,25 +16,15 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header>
 
-    </header>
-
-
+    @include("partials.header")
 
     <!-- main -->
     <main>
         @yield("content")
     </main>
 
-
-
-
-    <!-- footer -->
-    <footer>
-
-    </footer>
+    @include("partials.footer")
 
 
 </body>
