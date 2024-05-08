@@ -1,0 +1,31 @@
+@use "./variables" as *;
+
+.comic {
+    .single-comic-image {
+        height: 300px;
+        border: 2px solid white;
+        margin-top: -25rem;
+    }
+
+    .comic-title {
+        color: $comic-title;
+    }
+
+    .comic-price {
+        background-color: $comic-price;
+        box-shadow: 0px 2px 1px 0px black;
+
+        .us-price,
+        .availability {
+            color: $comic-price-text;
+        }
+    }
+
+    .ad {
+        color: $comic-title;
+    }
+}
+
+.about {
+    background-color: $comic-secondary-bg;
+}
