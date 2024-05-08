@@ -28,4 +28,64 @@
 
 .about {
     background-color: $comic-secondary-bg;
+    border-top: 1px solid $comic-secondary-text;
+
+    .about-top {
+        padding-bottom: 5rem;
+
+        .talent {
+
+            h4,
+            span {
+                color: $comic-title;
+            }
+
+            h4 {
+                border-bottom: 1px solid $comic-secondary-text;
+            }
+
+            a {
+                color: $primary-color;
+            }
+
+            .art,
+            .written {
+                border-bottom: 1px solid $comic-secondary-text;
+            }
+        }
+
+        .specs {
+
+            h4,
+            span {
+                color: $comic-title;
+            }
+
+            h4 {
+                border-bottom: 1px solid $comic-secondary-text;
+            }
+
+            div {
+                border-bottom: 1px solid $comic-secondary-text;
+            }
+        }
+    }
+
+    .about-bottom {
+        border-top: 1px solid $comic-secondary-text;
+
+        .col {
+            border-left: 1px solid $comic-secondary-text;
+            border-right: 1px solid $comic-secondary-text;
+        }
+
+        .text {
+            color: $comic-secondary-text;
+        }
+
+        img {
+            filter: contrast(0.5);
+        }
+    }
+
 }
