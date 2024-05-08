@@ -28,7 +28,7 @@ Route::get('/', function () {
         "icons" => $icons
     ];
 
-    return view('homepage', $data);
+    return view('guests.homepage', $data);
 })->name("homepage");
 
 Route::get('/movies', function () {
@@ -44,7 +44,7 @@ Route::get('/movies', function () {
         "footer_links" => $footer_links,
         "icons" => $icons
     ];
-    return view('movies', $data);
+    return view('guests.movies.index', $data);
 })->name("movies");
 
 Route::get('/tv', function () {
@@ -60,7 +60,7 @@ Route::get('/tv', function () {
         "footer_links" => $footer_links,
         "icons" => $icons
     ];
-    return view('tv', $data);
+    return view('guests.tv.index', $data);
 })->name("tv");
 
 Route::get('/comic_books', function () {
@@ -80,7 +80,7 @@ Route::get('/comic_books', function () {
         "icons" => $icons,
         "comic_books" => $comic_books
     ];
-    return view('comic_books', $data);
+    return view('guests.comic_books.index', $data);
 })->name("comic_books");
 
 Route::get('/comics/{id}', function ($id) {
@@ -103,5 +103,5 @@ Route::get('/comics/{id}', function ($id) {
         "icons" => $icons
     ];
 
-    return view('comic', $data);
+    return view('guests.comics.comic', $data);
 })->name("comic");

@@ -12,12 +12,12 @@
                 <!-- foreach to loop in comics -->
                 @foreach ($comics as $index => $comic)
                     <div class="col">
-                        <div class="comic">
-                            <img class="comic-image" src="{{ $comic['thumb'] }}" alt="">
-                            <div class="comic-title text-white text-uppercase">{{ $comic['series'] }}</div>
-                            <a href="{{ route('comic', ['id' => $index]) }}">Click</a>
-                        </div>
-
+                        <a class="comic-link text-decoration-none" href="{{ route('comic', ['id' => $index]) }}">
+                            <div class="comic">
+                                <img class="comic-image mb-2" src="{{ $comic['thumb'] }}" alt="">
+                                <div class="comic-title text-white text-uppercase">{{ $comic['series'] }}</div>
+                            </div>
+                        </a>
                     </div>
                 @endforeach
 
