@@ -82,3 +82,26 @@ Route::get('/comic_books', function () {
     ];
     return view('comic_books', $data);
 })->name("comic_books");
+
+Route::get('/comics/{id}', function ($id) {
+
+    if ($id >= 0 && count(config("comics"))) {
+        $comic = config("comics")[$id];
+    } else {
+        abort(404);
+    }
+
+    $banner_links = config("links.banner_links");
+    $footer_links = config("links.footer_links");
+    $icons = config("links.social_icons");
+    //dd($banner_images);
+    //dd($comics);
+    $data = [
+        "comic" => $comic,
+        "banner_links" => $banner_links,
+        "footer_links" => $footer_links,
+        "icons" => $icons
+    ];
+
+    return view('comic', $data);
+})->name("comic");
